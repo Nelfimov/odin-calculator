@@ -1,0 +1,104 @@
+@import url('http://fonts.cdnfonts.com/css/scientific-calculator-lcd');
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 0;
+  height: 100%;
+  min-height: 100%;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 24px;
+}
+
+.header,
+.content,
+.footer {
+  padding: 1% 10%;
+}
+
+.header,
+.footer {
+  background-color: #1f2937;
+  color: whitesmoke;
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+span.logo {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.content {
+  background-color: #E5E7EB;
+  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+input,
+button {
+  height: 30px;
+  border-radius: 4px;
+}
+
+button {
+  transition-duration: 0.4s;
+}
+
+
+input {
+  width: 410px;
+  text-align: right;
+  font-family: 'Scientific Calculator LCD', sans-serif;
+  font-size: 24px;
+}
+
+div.buttons {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  margin: 2px 0;
+  font-weight: bolder;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+button.equation {
+  width: 100px;
+}
+
+button.equation:hover {
+  background-color: #4CAF50;
+}
+
+button.digit,
+button.calculation {
+  width: 100px;
+}
+
+button.digit:hover {
+  background-color: #008CBA;
+}
+
+button.calculation:hover {
+  background-color: #f44336;
+}
+
+button.digit.zero {
+  width: 312px;
+}
