@@ -1,4 +1,5 @@
 const output = document.getElementById('output');
+const lastOperation = document.getElementById('last-output');
 const resultButton = document.getElementById('result');
 
 const mathOperator = {
@@ -21,6 +22,7 @@ window.addEventListener('keydown', (e) => {
     output.value = trimmedString;
   }
   if (e.key === 'Enter' || e.key === '=') {
+    lastOperation.value = output.value;
     let array = outputToArray(output.value);
     operate(array);
   }
@@ -111,6 +113,7 @@ function operate(array = []) {
 }
 
 resultButton.addEventListener('click', () => {
+  lastOperation.value = output.value;
   let array = outputToArray(output.value);
   operate(array);
 })

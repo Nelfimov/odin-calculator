@@ -61,13 +61,18 @@ input {
   text-align: right;
   font-family: 'Scientific Calculator LCD', sans-serif;
   font-size: 24px;
+  border-radius: 0;
 }
 
-input.last-output {
+#last-output {
   height: 30px;
   font-size: 12px;
   border-bottom: 0;
-  padding: 0;
+}
+
+#output {
+  border-top: 0;
+  margin-bottom: 10px;
 }
 
 div.buttons {
